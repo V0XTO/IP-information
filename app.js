@@ -4,7 +4,7 @@
 async function loadApi(ip) {
 
     const access_key = "";
-    const info = await fetch(`http://api.ipapi.com/${ip}?access_key=47e613eb881a28c8d1eeec8907c05095`)
+    const info = await fetch(`http://api.ipapi.com/${ip}?access_key=${access_key}`)
     const infoJson = await info.json()
     return infoJson
 }
